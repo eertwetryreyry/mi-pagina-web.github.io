@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- DW6 -->
+<head>
+<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href= "emx_nav_right.css" type="text/css" />
+<script type="text/javascript">
+<!--
+var time = 3000;
+var numofitems = 7;
+
+//menu constructor
+function menu(allitems,thisitem,startstate){ 
+  callname= "gl"+thisitem;
+  divname="subglobal"+thisitem;  
+	this.numberofmenuitems = allitems;
+	this.caller = document.getElementById(callname);
+	this.thediv = document.getElementById(divname);
+	this.thediv.style.visibility = startstate;
+}
+				 
+//menu methods
+function ehandler(event,theobj){
+  for (var i=1; i<= theobj.numberofmenuitems; i++){
+	  var shutdiv =eval( "menuitem"+i+".thediv");
+    shutdiv.style.visibility="hidden";
+	}
+	theobj.thediv.style.visibility="visible";
+}
+				
+function closesubnav(event){
+  if ((event.clientY <48)||(event.clientY > 107)){
+    for (var i=1; i<= numofitems; i++){
+      var shutdiv =eval('menuitem'+i+'.thediv');
+			shutdiv.style.visibility='hidden';
+		}  
+	}
+}
+// -->
+</script>
+<style type="text/css">
+<!--
+.Estilo7 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: x-large;
+	font-style: italic;
+	color: #990033;
+}
+.Estilo12 {font-family: Georgia, "Times New Roman", Times, serif; font-size: x-large; font-style: italic; color: #660000; }
+.Estilo13 {
+	font-family: "Times New Roman", Times, serif;
+	color: #993399;
+	font-size: small;
+}
+.Estilo14 {
+	color: #000000;
+	font-size: larger;
+}
+.Estilo16 {
+	color: #000000;
+	font-size: large;
+	font-family: "Times New Roman", Times, serif;
+}
+.Estilo17 {
+	font-size: large;
+	font-family: "Times New Roman", Times, serif;
+}
+.Estilo20 {font-family: Georgia, "Times New Roman", Times, serif; font-size: xx-large; font-style: italic; color: #990000; }
+body {
+	background-color: #33FF66;
+	background-image: url(imagen%2014567.jpg);
+}
+-->
+</style>
+</head>
+<body onmousemove="closesubnav(event);">
+<div class="skipLinks">skip to: <a href="#content">page content</a> | <a href="#pageNav">links on this page</a> | <a href="#globalNav">site navigation</a> | <a href="#siteInfo">footer (site information)</a> </div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div id="masthead"> <span class="Estilo20">fabulas</span>
+  <div id="utility"> <a href="#">facebook</a> | <a href="#">twitter</a>|<a href="#"></a> </div>
+  <div id="globalNav"> <img alt="" src="gblnav_left.gif" height="32" width="4" id="gnl" /> <img alt="" src="glbnav_right.gif" height="32" width="4" id="gnr" />
+    <div id="globalLink"> <a href="#" id="gl1" class="glink" onmouseover="ehandler(event,menuitem1);"></a><a href="file:///C|/Users/52953/OneDrive/Documentos/INFORMACION/NOVELAS.htm">NOVELAS</a></div>
+    <!--end globalLinks-->
+    <form id="search" action="">
+      <input name="searchFor" type="text" size="10" />
+      <a href="">search</a>
+    </form>
+  </div>
+  <!-- end globalNav -->
+  <div id="subglobal1" class="subglobalNav"> <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> | <a href="#">subglobal1 link</a> </div>
+  <div id="subglobal2" class="subglobalNav"> <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> | <a href="#">subglobal2 link</a> </div>
+  <div id="subglobal3" class="subglobalNav"> <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> | <a href="#">subglobal3 link</a> </div>
+  <div id="subglobal4" class="subglobalNav"> <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> | <a href="#">subglobal4 link</a> </div>
+  <div id="subglobal5" class="subglobalNav"> <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> | <a href="#">subglobal5 link</a> </div>
+  <div id="subglobal6" class="subglobalNav"> <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> | <a href="#">subglobal6 link</a> </div>
+  <div id="subglobal7" class="subglobalNav"> <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> | <a href="#">subglobal7 link</a> </div>
+  <div id="subglobal8" class="subglobalNav"> <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> | <a href="#">subglobal8 link</a> </div>
+</div>
+<!-- end masthead -->
+<div id="pagecell1">
+  <!--pagecell1-->
+  <img alt="" src="tl_curve_white.gif" height="6" width="6" id="tl" /> <img alt="" src="tr_curve_white.gif" height="6" width="6" id="tr" />
+  <div id="breadCrumb"></div>
+  <div id="pageName">
+    <h1 class="Estilo12">FABULA &quot;LOS 3 HERMANOS&quot; </h1>
+    <img alt="small logo" src="imagen 14567.jpg" height="59" width="66"/></div>
+  <div id="pageNav">
+    <div class="relatedLinks">
+      <h3>INFORMACION</h3>
+      <a href="file:///C|/Users/52953/OneDrive/Documentos/INFORMACION/SAGA HARRY POTTER.htm">SAGA HARRY POTTER</a><a href="#"></a> <a href="file:///C|/Users/52953/OneDrive/Documentos/INFORMACION/CRONOLOGIA.htm">CRONOLOGIA</a><a href="#"></a></div>
+    <div id="advert"><img src="imagen 1634.jpg" alt="" width="107" height="86" /> Advertisement copy goes here.  </div>
+  </div>
+  <div id="content">
+    <div class="feature">
+      <img src="imagen1345.jpg" alt="" width="300" height="200" />
+      <p class="Estilo13 Estilo14">La Fábula de los Tres Hermanos es un cuento incluido dentro de Los cuentos de Beedle el Bardo en la saga de harry potter(las reliquias de la muerte). libro cuyo ejemplar fue legado a Hermione Granger por Albus Dumbledore luego de su muerte, con el símbolo de las Reliquias de la Muerte impreso en el título para que ella, junto a Harry Potter y Ron Weasley, descubrieran el misterio de las Reliquias.</p>
+      <p class="Estilo13 Estilo14">La historia hace referencia a tres hermanos de las antig&uuml;edad, los hermanos&nbsp;<a href="https://harrypotter.fandom.com/es/wiki/Familia_Peverell" title="Familia Peverell">Peverell</a>:&nbsp;<a href="https://harrypotter.fandom.com/es/wiki/Antioch_Peverell" title="Antioch Peverell">Antioch</a>,&nbsp;<a href="https://harrypotter.fandom.com/es/wiki/Cadmus_Peverell" title="Cadmus Peverell">Cadmus</a>&nbsp;e&nbsp;<a href="https://harrypotter.fandom.com/es/wiki/Ignotus_Peverell" title="Ignotus Peverell">Ignotus</a>, quienes iban por un camino hasta que se detuvieron al ver un r&iacute;o peligroso.</p>
+    </div>
+    <div class="story">
+      <h4 class="Estilo7"> los tres hermanos </h4>
+      <p> <span class="Estilo16">Había una vez tres hermanos que viajaban por un camino sinuoso y solitario, al atardecer.                                                De pronto los hermanos llegaron a un río demasiado traicionero para cruzarlo. Pero siendo diestros en el arte de la magia los tres hermanos solo usaron sus varitas para crear un puente.              Sin embargo, antes de pasar, una figura encapuchada bloqueó su camino, era la muerte, y se sintió defraudada porque los viajeros normalmente se ahogaban en el río. Pero la muerte era astuta. Fingió felicitar a los tres hermanos por su magia y les dijo que se habían ganado un premio por ser lo bastante listos para evitarla.</span></p>
+      <p class="Estilo16"> El mayor, pidió una varita más poderosa que cualquiera que existiera, y la muerte se la fabricó de un árbol de Sáuco que estaba cerca . El segundo hermano decidió que quería humillar a la muerte aún más, pidió el poder de traer a seres amados desde la tumba. Así la muerte tomo una piedra del río y se la entregó. Finalmente, la muerte giró hacia el tercer hermano, un hombre humilde. Él pidió algo que le permitiera irse de ese lugar evitando que la muerte lo siguiera, la muerte de mala gana, le dio su propio manto de invisibilidad.</p>
+      <p class="Estilo16"> El primer hermano viajo a un poblado distante y con la varita de Sáuco en la mano mató a un mago con quien una vez había peleado. Ebrio con el poder que le había dado la varita, presumió ser invencible. Pero esa noche, otro mago le robó la varita y le cortó el cuello de lado a lado. Y la muerte reclamó al primer hermano. </p>
+      <p class="Estilo16"> Mientras, el segundo hermano fue a su hogar donde tomó la piedra y la giró tres veces en su mano. Para su deleite, la mujer con la que había querido casarse antes de su repentina muerte, apareció frente a él, pero pronto se volvió triste y fría, pues ya no pertenecía al mundo de los mortales. Llevado a la locura por su tristeza, el segundo hermano se quitó la vida para estar con ella, y la     muerte se llevó al segundo hermano.</p>
+      <p class="Estilo16"> Al tercer hermano la muerte lo buscó por muchos años, pero nunca pudo encontrarlo, solo cuando llegó a una edad muy avanzada, el hermano más joven se quitó el manto de invisibilidad y se lo dio a su hijo. Recibió a la muerte como a una vieja amiga y fue con ella con gusto, dejando esta vida como iguales. </p>
+      <p class="Estilo16">&nbsp;</p>
+      <p class="Estilo16">&nbsp;</p>
+      <p class="Estilo16">&nbsp;</p>
+      <p class="Estilo17">&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+    <div class="story">
+      <table width="100%" cellpadding="0" cellspacing="0" summary="">
+      </table>
+    </div>
+  </div>
+  <!--end content -->
+  <div id="siteInfo"> <img src="imagen 1634.jpg" width="44" height="22" /><a href="#">About Us</a> | <a href="#">Site Map</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact Us:9532400077</a> | &copy;2022 EM company </div>
+</div>
+<p>
+  <!--end pagecell1-->
+  <br />
+  <script type="text/javascript">
+    <!--
+      var menuitem1 = new menu(7,1,"hidden");
+			var menuitem2 = new menu(7,2,"hidden");
+			var menuitem3 = new menu(7,3,"hidden");
+			var menuitem4 = new menu(7,4,"hidden");
+			var menuitem5 = new menu(7,5,"hidden");
+			var menuitem6 = new menu(7,6,"hidden");
+			var menuitem7 = new menu(7,7,"hidden");
+    // -->
+    </script>
+</p>
+<p>&nbsp;</p>
+</body> 
+</html>
